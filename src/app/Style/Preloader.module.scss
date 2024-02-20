@@ -1,0 +1,38 @@
+.introduction{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    background-color: #111111;
+    svg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: calc(100% + 300px);
+        path{
+            fill: #141516;
+        }
+    }
+    p{
+        display: flex;
+        color: transparent; /* Make the text color transparent */
+        font-size: 42px;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(45deg, #1B58B8, #19A351); /* Add the gradient background */
+        -webkit-background-clip: text; /* Required for the gradient to cover the text */
+        -webkit-text-fill-color: transparent; /* Required for the gradient to cover the text */
+        span{
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }
+}
